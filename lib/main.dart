@@ -154,101 +154,100 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('Row'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => RowWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RowWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Column'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ColumnWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ColumnWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('ListView'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ListViewWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ListViewWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Stack'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => StackWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => StackWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Expanded'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ExpandedWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ExpandedWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Flexible'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => FlexibleWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => FlexibleWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Wrap'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => WrapWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => WrapWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('SizedBox'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => SizedBoxWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SizedBoxWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('ConstrainedBox'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ConstrainedBoxWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ConstrainedBoxWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('AspectRatio'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => AspectRatioWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AspectRatioWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('FittedBox'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => FittedBoxWidget()),
-
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => FittedBoxWidget()),
+                      );
                     },
                   ),
                 ],

@@ -473,3 +473,498 @@ class _StackWidgetState extends State<StackWidget> {
     );
   }
 }
+
+// Same for ExpandedWidget
+
+class ExpandedWidget extends StatefulWidget {
+  const ExpandedWidget({super.key});
+
+  @override
+  State<ExpandedWidget> createState() => _ExpandedWidgetState();
+}
+
+class _ExpandedWidgetState extends State<ExpandedWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Expanded Widget'),
+      ),
+      body: ListView(children: [
+        Center(
+          child: Row(
+            children: [
+              Expanded(
+                child: Container(
+                  color: Colors.red,
+                  height: 100,
+                ),
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
+        ),
+        Center(
+          //documentation for this widget using the selectable_code_view package .
+          child: SelectableCodeView(
+            code: '''Center(
+          child: Row(
+            children: [
+              Expanded(
+                child: Container(
+                  color: Colors.red,
+                  height: 100,
+                ),
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
+        ),
+
+        Following are all the properties of the Expanded widget
+        flex: int,
+        child: Widget,
+        key: Key,
+        ''', // Code text
+            language: Language.DART, // Language
+            languageTheme: LanguageTheme.vscodeLight(), // Theme
+            fontSize: 12.0, // Font size
+            withZoom: true, // Enable/Disable zoom icon controls
+            withLinesCount: true, // Enable/Disable line number
+            expanded: false, // Enable/Disable container expansion
+          ),
+        )
+      ]),
+    );
+  }
+}
+
+// Same for FlexibleWidget
+
+class FlexibleWidget extends StatefulWidget {
+  const FlexibleWidget({super.key});
+
+  @override
+  State<FlexibleWidget> createState() => _FlexibleWidgetState();
+}
+
+class _FlexibleWidgetState extends State<FlexibleWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Flexible Widget'),
+      ),
+      body: ListView(children: [
+        Center(
+          child: Row(
+            children: [
+              Flexible(
+                child: Container(
+                  color: Colors.red,
+                  height: 100,
+                ),
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
+        ),
+        Center(
+          //documentation for this widget using the selectable_code_view package .
+          child: SelectableCodeView(
+            code: '''Center(
+          child: Row(
+            children: [
+              Flexible(
+                child: Container(
+                  color: Colors.red,
+                  height: 100,
+                ),
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
+        ),
+
+        Following are all the properties of the Flexible widget
+        flex: int,
+        fit: FlexFit,
+        child: Widget,
+        key: Key,
+        ''', // Code text
+            language: Language.DART, // Language
+            languageTheme: LanguageTheme.vscodeLight(), // Theme
+            fontSize: 12.0, // Font size
+            withZoom: true, // Enable/Disable zoom icon controls
+            withLinesCount: true, // Enable/Disable line number
+            expanded: false, // Enable/Disable container expansion
+          ),
+        )
+      ]),
+    );
+  }
+}
+
+// Same for WrapWidget
+
+class WrapWidget extends StatefulWidget {
+  const WrapWidget({super.key});
+
+  @override
+  State<WrapWidget> createState() => _WrapWidgetState();
+}
+
+class _WrapWidgetState extends State<WrapWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Wrap Widget'),
+      ),
+      body: ListView(children: [
+        Center(
+          child: Wrap(
+            children: [
+              Container(
+                color: Colors.red,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
+        ),
+        Center(
+          //documentation for this widget using the selectable_code_view package .
+          child: SelectableCodeView(
+            code: '''Center(
+          child: Wrap(
+            children: [
+              Container(
+                color: Colors.red,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.green,
+                height: 100,
+                width: 100,
+              ),
+              Container(
+                color: Colors.blue,
+                height: 100,
+                width: 100,
+              ),
+            ],
+          ),
+        ),
+
+        Following are all the properties of the Wrap widget
+        direction: Axis,
+        alignment: WrapAlignment,
+        spacing: double,
+        runAlignment: WrapAlignment,
+        runSpacing: double,
+        crossAxisAlignment: WrapCrossAlignment,
+        textDirection: TextDirection,
+        verticalDirection: VerticalDirection,
+        clipBehavior: Clip,
+        children: List<Widget>,
+        key: Key,
+        ''', // Code text
+            language: Language.DART, // Language
+            languageTheme: LanguageTheme.vscodeLight(), // Theme
+            fontSize: 12.0, // Font size
+            withZoom: true, // Enable/Disable zoom icon controls
+            withLinesCount: true, // Enable/Disable line number
+            expanded: false, // Enable/Disable container expansion
+          ),
+        )
+      ]),
+    );
+  }
+}
+
+// Same for SizedBoxWidget
+
+class SizedBoxWidget extends StatefulWidget {
+  const SizedBoxWidget({super.key});
+
+  @override
+  State<SizedBoxWidget> createState() => _SizedBoxWidgetState();
+}
+
+class _SizedBoxWidgetState extends State<SizedBoxWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('SizedBox Widget'),
+      ),
+      body: ListView(children: [
+        Center(
+          child: SizedBox(
+            height: 100,
+            width: 100,
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
+        ),
+        Center(
+          //documentation for this widget using the selectable_code_view package .
+          child: SelectableCodeView(
+            code: '''Center(
+          child: SizedBox(
+            height: 100,
+            width: 100,
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
+        ),
+
+        Following are all the properties of the SizedBox widget
+        width: double,
+        height: double,
+        child: Widget,
+        key: Key,
+        ''', // Code text
+            language: Language.DART, // Language
+            languageTheme: LanguageTheme.vscodeLight(), // Theme
+            fontSize: 12.0, // Font size
+            withZoom: true, // Enable/Disable zoom icon controls
+            withLinesCount: true, // Enable/Disable line number
+            expanded: false, // Enable/Disable container expansion
+          ),
+        )
+      ]),
+    );
+  }
+}
+
+// Same for ConstrainedBoxWidget
+
+class ConstrainedBoxWidget extends StatefulWidget {
+  const ConstrainedBoxWidget({super.key});
+
+  @override
+  State<ConstrainedBoxWidget> createState() => _ConstrainedBoxWidgetState();
+}
+
+class _ConstrainedBoxWidgetState extends State<ConstrainedBoxWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('ConstrainedBox Widget'),
+      ),
+      body: ListView(children: [
+        Center(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxHeight: 100,
+              maxWidth: 100,
+              minHeight: 50,
+              minWidth: 50,
+            ),
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
+        ),
+        Center(
+          //documentation for this widget using the selectable_code_view package .
+          child: SelectableCodeView(
+            code: '''Center(
+          child: ConstrainedBox(
+            constraints: BoxConstraints(
+              maxHeight: 100,
+              maxWidth: 100,
+              minHeight: 50,
+              minWidth: 50,
+            ),
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
+        ),
+
+        Following are all the properties of the ConstrainedBox widget
+        constraints: BoxConstraints,
+        child: Widget,
+        key: Key,
+        ''', // Code text
+            language: Language.DART, // Language
+            languageTheme: LanguageTheme.vscodeLight(), // Theme
+            fontSize: 12.0, // Font size
+            withZoom: true, // Enable/Disable zoom icon controls
+            withLinesCount: true, // Enable/Disable line number
+            expanded: false, // Enable/Disable container expansion
+          ),
+        )
+      ]),
+    );
+  }
+}
+
+// Same for AspectRatioWidget
+
+class AspectRatioWidget extends StatefulWidget {
+  const AspectRatioWidget({super.key});
+
+  @override
+  State<AspectRatioWidget> createState() => _AspectRatioWidgetState();
+}
+
+class _AspectRatioWidgetState extends State<AspectRatioWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('AspectRatio Widget'),
+      ),
+      body: ListView(children: [
+        Center(
+          child: AspectRatio(
+            aspectRatio: 1 / 2,
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
+        ),
+        Center(
+          //documentation for this widget using the selectable_code_view package .
+          child: SelectableCodeView(
+            code: '''Center(
+          child: AspectRatio(
+            aspectRatio: 1 / 2,
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
+        ),
+
+        Following are all the properties of the AspectRatio widget
+        aspectRatio: double,
+        child: Widget,
+        key: Key,
+        ''', // Code text
+            language: Language.DART, // Language
+            languageTheme: LanguageTheme.vscodeLight(), // Theme
+            fontSize: 12.0, // Font size
+            withZoom: true, // Enable/Disable zoom icon controls
+            withLinesCount: true, // Enable/Disable line number
+            expanded: false, // Enable/Disable container expansion
+          ),
+        )
+      ]),
+    );
+  }
+}
+
+// Same for FittedBoxWidget
+
+class FittedBoxWidget extends StatefulWidget {
+  const FittedBoxWidget({super.key});
+
+  @override
+  State<FittedBoxWidget> createState() => _FittedBoxWidgetState();
+}
+
+class _FittedBoxWidgetState extends State<FittedBoxWidget> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('FittedBox Widget'),
+      ),
+      body: ListView(children: [
+        Center(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Container(
+              color: Colors.red,
+              height: 100,
+              width: 100,
+            ),
+          ),
+        ),
+        Center(
+          //documentation for this widget using the selectable_code_view package .
+          child: SelectableCodeView(
+            code: '''Center(
+          child: FittedBox(
+            fit: BoxFit.contain,
+            child: Container(
+              color: Colors.red,
+              height: 100,
+              width: 100,
+            ),
+          ),
+        ),
+
+        Following are all the properties of the FittedBox widget
+        fit: BoxFit,
+        alignment: Alignment,
+        clipBehavior: Clip,
+        child: Widget,
+        key: Key,
+        ''', // Code text
+            language: Language.DART, // Language
+            languageTheme: LanguageTheme.vscodeLight(), // Theme
+            fontSize: 12.0, // Font size
+            withZoom: true, // Enable/Disable zoom icon controls
+            withLinesCount: true, // Enable/Disable line number
+            expanded: false, // Enable/Disable container expansion
+          ),
+        )
+      ]),
+    );
+  }
+}
