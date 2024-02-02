@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets_demo/1.layout_widgets.dart';
 import 'package:widgets_demo/2.text_typography.dart';
 import 'package:widgets_demo/3.input_and_selection.dart';
+import 'package:widgets_demo/4.buttons_and_indicators.dart';
 /*
 
 # widgets_demo
@@ -360,55 +361,55 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('ElevatedButton'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ElevatedButtonWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ElevatedButtonWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('TextButton'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => TextButtonWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TextButtonWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('OutlinedButton'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => OutlinedButtonWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => OutlinedButtonWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('IconButton'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => IconButtonWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => IconButtonWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('FloatingActionButton'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => FloatingActionButtonWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => FloatingActionButtonWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('CupertinoButton'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => CupertinoButtonWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CupertinoButtonWidget()),
+                      );
                     },
                   ),
                 ],
@@ -525,19 +526,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('DecoratedBox'),
                     onTap: () {
-                      // Navigator.push(
+                      // Navigator.push (
                       //   context,
                       //   MaterialPageRoute(builder: (context) => DecoratedBoxWidget()),
                       // );
-                    },
-                  ),
-                  ListTile(
-                    title: const Text('Container'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => ContainerWidget()),
-                      );
                     },
                   ),
                 ],
