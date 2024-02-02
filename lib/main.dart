@@ -3,6 +3,7 @@ import 'package:widgets_demo/1.layout_widgets.dart';
 import 'package:widgets_demo/2.text_typography.dart';
 import 'package:widgets_demo/3.input_and_selection.dart';
 import 'package:widgets_demo/4.buttons_and_indicators.dart';
+import 'package:widgets_demo/5.dialogues_and_sheets.dart';
 /*
 
 # widgets_demo
@@ -430,37 +431,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('AlertDialog'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => AlertDialogWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AlertDialogWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('SimpleDialog'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => SimpleDialogWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SimpleDialogWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('BottomSheet'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => BottomSheetWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BottomSheetWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('PopupMenuButton'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => PopupMenuButtonWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => PopupMenuButtonWidget()),
+                      );
                     },
                   ),
                 ],
