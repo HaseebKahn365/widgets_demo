@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_demo/layout_widgets.dart';
 /*
 
 # widgets_demo
@@ -144,10 +145,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('Container'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ContainerWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ContainerWidget()),
+                      );
                     },
                   ),
                   ListTile(
@@ -540,10 +541,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('Container'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ContainerWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ContainerWidget()),
+                      );
                     },
                   ),
                 ],
