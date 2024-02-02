@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:widgets_demo/layout_widgets.dart';
+import 'package:widgets_demo/1.layout_widgets.dart';
+import 'package:widgets_demo/2.text_typography.dart';
+import 'package:widgets_demo/3.input_and_selection.dart';
 /*
 
 # widgets_demo
@@ -116,14 +118,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -265,37 +259,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('Text'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => TextWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TextWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('RichText'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => RichTextWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RichTextWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('DefaultTextStyle'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => DefaultTextStyleWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DefaultTextStyleWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('TextStyle'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => TextStyleWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TextStyleWidget()),
+                      );
                     },
                   ),
                 ],
@@ -315,37 +309,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('TextField'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => TextFieldWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TextFieldWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Checkbox'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => CheckboxWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CheckboxWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Radio'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => RadioWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RadioWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Switch'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => SwitchWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SwitchWidget()),
+                      );
                     },
                   ),
                 ],
