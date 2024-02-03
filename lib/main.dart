@@ -4,6 +4,7 @@ import 'package:widgets_demo/2.text_typography.dart';
 import 'package:widgets_demo/3.input_and_selection.dart';
 import 'package:widgets_demo/4.buttons_and_indicators.dart';
 import 'package:widgets_demo/5.dialogues_and_sheets.dart';
+import 'package:widgets_demo/6.containers_and_cards.dart';
 /*
 
 # widgets_demo
@@ -482,55 +483,55 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('Card'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => CardWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CardWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('ListTile'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ListTileWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ListTileWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('GridView'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => GridViewWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => GridViewWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('ExpansionPanel'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ExpansionPanelWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ExpansionPanelWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Chip'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ChipWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ChipWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('DecoratedBox'),
                     onTap: () {
-                      // Navigator.push (
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => DecoratedBoxWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DecoratedBoxWidget()),
+                      );
                     },
                   ),
                 ],
