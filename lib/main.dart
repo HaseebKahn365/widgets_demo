@@ -5,6 +5,8 @@ import 'package:widgets_demo/3.input_and_selection.dart';
 import 'package:widgets_demo/4.buttons_and_indicators.dart';
 import 'package:widgets_demo/5.dialogues_and_sheets.dart';
 import 'package:widgets_demo/6.containers_and_cards.dart';
+import 'package:widgets_demo/7.images_icons_avatars.dart';
+import 'package:widgets_demo/8.progress_and_loading.dart';
 /*
 
 # widgets_demo
@@ -552,37 +554,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('Image'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ImageWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ImageWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Icon'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => IconWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => IconWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('CircleAvatar'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => CircleAvatarWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CircleAvatarWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('ClipOval'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => ClipOvalWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ClipOvalWidget()),
+                      );
                     },
                   ),
                 ],
@@ -603,37 +605,37 @@ class _MyHomePageState extends State<MyHomePage> {
                   ListTile(
                     title: const Text('LinearProgressIndicator'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => LinearProgressIndicatorWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => LinearProgressIndicatorWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('CircularProgressIndicator'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => CircularProgressIndicatorWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CircularProgressIndicatorWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('RefreshIndicator'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => RefreshIndicatorWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RefreshIndicatorWidget()),
+                      );
                     },
                   ),
                   ListTile(
                     title: const Text('Stepper'),
                     onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(builder: (context) => StepperWidget()),
-                      // );
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => StepperWidget()),
+                      );
                     },
                   ),
                 ],
@@ -641,7 +643,107 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
 
-          //end of the list view
+          //expansion tile for sliders and pickers
+
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Card(
+              shadowColor: Theme.of(context).colorScheme.primary,
+              elevation: 10,
+              child: ExpansionTile(
+                title: const Text('Sliders and Pickers'),
+                children: <Widget>[
+                  ListTile(
+                    title: const Text('Slider'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SliderWidget()),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('RangeSlider'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => RangeSliderWidget()),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('DatePicker'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DatePickerWidget()),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('TimePicker'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TimePickerWidget()),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
+
+          //expansion tile for tabs and navigation
+
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: Card(
+              shadowColor: Theme.of(context).colorScheme.primary,
+              elevation: 10,
+              child: ExpansionTile(
+                title: const Text('Tabs and Navigation'),
+                children: <Widget>[
+                  ListTile(
+                    title: const Text('TabBar'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => TabBarWidget()),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('BottomNavigationBar'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => BottomNavigationBarWidget()),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('Drawer'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => DrawerWidget()),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('AppBar'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AppBarWidget()),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
