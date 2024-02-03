@@ -7,6 +7,7 @@ import 'package:widgets_demo/5.dialogues_and_sheets.dart';
 import 'package:widgets_demo/6.containers_and_cards.dart';
 import 'package:widgets_demo/7.images_icons_avatars.dart';
 import 'package:widgets_demo/8.progress_and_loading.dart';
+import 'package:widgets_demo/9.sliders_and_pickers.dart';
 /*
 
 # widgets_demo
@@ -723,20 +724,33 @@ class _MyHomePageState extends State<MyHomePage> {
                     },
                   ),
                   ListTile(
-                    title: const Text('Drawer'),
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(builder: (context) => DrawerWidget()),
-                      );
-                    },
-                  ),
-                  ListTile(
                     title: const Text('AppBar'),
                     onTap: () {
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => AppBarWidget()),
+                      );
+                    },
+                  ),
+
+                  //LIST TILES FOR OTHER TYPES OF APPBARS
+                  ListTile(
+                    title: const Text('SliverAppBar'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => SliverAppBarWidget()),
+                      );
+                    },
+                  ),
+
+                  //APPBAR WITH ACTIONS
+                  ListTile(
+                    title: const Text('AppBar with Actions'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => AppBarWithActionsWidget()),
                       );
                     },
                   ),
